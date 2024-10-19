@@ -1,0 +1,20 @@
+hello:
+    label: Hello
+    description: Blog post about welcoming new users and features
+    color: blue
+update:
+    label: Update
+    description: Blog post about new updates and features
+    color: green
+tutorial:
+    label: Tutorial
+    description: Short (5 minutes) tips and tricks
+    color: orange
+important:
+    label: Important
+    description: Blog post about important things
+    color: red
+fact:
+    label: Fun facts
+    description: Blog post about programming facts
+    color: purple
