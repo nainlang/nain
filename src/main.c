@@ -10,23 +10,11 @@ Nain is currently on development, v0.01 dev
 */
 
 #include <stdio.h>
-#include "./headers/lexer.h"
-#include <stdlib.h> 
+#include "headers/lexer.h"
+
 int main() {
-    // reads file contents
-    char *input = malloc(sizeof(char) * 1000);
-    FILE *file = fopen("src/main.nain", "r");
-    if (file == NULL) {
-        printf("File not found!\n");
-        return 1;
-    }
-    fread(input, sizeof(char), 1000, file);
-    if (getTokens(input) != 0) {
-      printf("Error in file!\n");
-    } else {
-        printf("File parsed successfully!\n");
-        printf(getTokens(input));
-    }
-    fclose(file);
+    char *input = "fn main() { print!(\"Hello World!\") }/hi\n\\//hi";
+    get_all_tokens(input);
+    printf("Lexer version: %s\n", LEXER_VER);
     return 0;
 }

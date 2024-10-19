@@ -1,0 +1,46 @@
+    /This is a multi
+    line comment
+    \
+
+    // and this is a single line comment
+
+with lib studio
+
+    fn main() {
+        print!("Hello World!") // uses some suffixes on functions depending on what they do (for better readability)
+        let a = 10
+        let b = 20
+        let c = a + b
+        let infinity = inf
+        let PI = 3.141592
+        print!("The value of PI is "..PI)
+    }
+
+data types:
+    int
+    float
+    bool
+    char
+    string
+    array
+    tuple
+    enum
+    struct
+    union
+    class
+    module
+    library
+    function
+    inf
+    nil
+    notanum
+    -inf
+    zerotozero
+operators:
+    + - * / % ^ << >> & | ~ ! == != < > <= >= && || ++ --
+    = += -= *= /= %= ^= <<= >>= &= |= ~= !
+    keywords:
+        if else while for break continue return true false null
+        fn class with import as
+        let var const global static void mut unmut class ext new rm point struct enum union
+        module lib with
