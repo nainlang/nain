@@ -1,4 +1,6 @@
 # Nain. A fast, lightweight and general-purpose Programming Language
+![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)
+
 
 Nain is built from the ground up to be fast, top-level and in result, a game changer for programming.
 
@@ -47,7 +49,7 @@ Neopack is the default Nain package manager.
 Congratulations!
 You have just created your first Nain project.
 
-Now, neopack generated this project for you:
+Now, nain generated this project for you:
 ```filetree
 my-project
     .gitignore
