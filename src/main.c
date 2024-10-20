@@ -1,20 +1,17 @@
-/*
-###################################################
-### The nain programming language #################
-###################################################
-
-Thanks for using nain!
-Nain is a new and modern programming language made to be easy to learn and use.
-
-Nain is currently on development, v0.01 dev
-*/
-
-#include <stdio.h>
-#include "headers/lexer.h"
-
+#include "./headers/lexer.h"
+#include "./headers/parser.h"
+// Main function
 int main() {
-    char *input = "fn main() { print!(\"Hello World!\") }/hi\n\\//hi";
-    get_all_tokens(input);
-    printf("Lexer version: %s\n", LEXER_VER);
-    return 0;
+  char code[256]; // Buffer for user input
+
+  // Example input (can be modified for testing)
+  strcpy(code, "x + y - 3"); // Example expression
+
+  // Tokenize the input
+  get_all_tokens(code); // Call lexer to get tokens
+
+  // Parse the input
+  parse(code); // Call parser
+
+  return 0;
 }

@@ -1,0 +1,27 @@
+{
+  "id": "basic-tutorial/vars",
+  "title": "Variables",
+  "description": "In this tutorial, we'll learn how to use variables in Nain.",
+  "source": "@site/docs/basic-tutorial/3.vars.md",
+  "sourceDirName": "basic-tutorial",
+  "slug": "/basic-tutorial/vars",
+  "permalink": "/docs/basic-tutorial/vars",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/nainlang/nain/tree/web/docs/basic-tutorial/3.vars.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Make a Hello World program!",
+    "permalink": "/docs/basic-tutorial/helloworld"
+  },
+  "next": {
+    "title": "Functions",
+    "permalink": "/docs/basic-tutorial/functions"
+  }
+}

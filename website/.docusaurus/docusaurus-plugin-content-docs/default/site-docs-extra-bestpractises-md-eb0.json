@@ -1,0 +1,23 @@
+{
+  "id": "extra/bestpractises",
+  "title": "Best Practises",
+  "description": "Here are some best practises that you should follow when writing nain programs.",
+  "source": "@site/docs/extra/bestpractises.md",
+  "sourceDirName": "extra",
+  "slug": "/extra/bestpractises",
+  "permalink": "/docs/extra/bestpractises",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/nainlang/nain/tree/web/docs/extra/bestpractises.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Conditionals & loops",
+    "permalink": "/docs/basic-tutorial/conditionals"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Recent posts",
+  "items": [
+    {
+      "title": "Hello",
+      "permalink": "/blog/hello",
+      "unlisted": false,
+      "date": "2024-10-20T09:41:00.000Z"
+    }
+  ]
+}

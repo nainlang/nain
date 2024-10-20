@@ -1,0 +1,42 @@
+{
+  "permalink": "/blog/hello",
+  "editUrl": "https://github.com/nainlang/nain/tree/web/blog/hello.md",
+  "source": "@site/blog/hello.md",
+  "title": "Hello",
+  "description": "This is the blog of the Nain project.",
+  "date": "2024-10-20T09:41:00.000Z",
+  "tags": [
+    {
+      "inline": false,
+      "label": "Hello",
+      "permalink": "/blog/tags/hello",
+      "description": "Blog post about welcoming new users and features"
+    }
+  ],
+  "readingTime": 0.32,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Mario Rosell",
+      "title": "Maintainer and creator of Nain",
+      "page": {
+        "permalink": "/blog/authors/mario"
+      },
+      "socials": {
+        "github": "https://github.com/theactualmariluski"
+      },
+      "key": "mario"
+    }
+  ],
+  "frontMatter": {
+    "slug": "hello",
+    "title": "Hello",
+    "authors": [
+      "mario"
+    ],
+    "tags": [
+      "hello"
+    ]
+  },
+  "unlisted": false
+}

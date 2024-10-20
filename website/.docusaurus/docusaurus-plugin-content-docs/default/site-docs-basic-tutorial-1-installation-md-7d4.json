@@ -1,0 +1,27 @@
+{
+  "id": "basic-tutorial/installation",
+  "title": "1. Installation",
+  "description": "In this tutorial, we'll install Nain on your computer.",
+  "source": "@site/docs/basic-tutorial/1.installation.md",
+  "sourceDirName": "basic-tutorial",
+  "slug": "/basic-tutorial/installation",
+  "permalink": "/docs/basic-tutorial/installation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/nainlang/nain/tree/web/docs/basic-tutorial/1.installation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "Make a Hello World program!",
+    "permalink": "/docs/basic-tutorial/helloworld"
+  }
+}

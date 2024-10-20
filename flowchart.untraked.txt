@@ -1,0 +1,23 @@
+DIAGRAM FOR EXPLAINING THE FOR LOOP
+
+DECLARATION:
+
+[For keyword]
+      ↓
+[Counter variable (iterator, normally called i)]
+      ↓
+[How to increment the variable after each iteration]
+      ↓
+[Curly Braces]
+      ↓
+[Code to run every iteration]
+
+WHILE RUNNING:
+
+[do the code in the curly braces]
+      ↓
+[is the variable meeting the condition]
+        ↓        ↓
+        yes     no
+        ↓        ↓
+        (stop) (continue)
