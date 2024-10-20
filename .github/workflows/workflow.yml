@@ -1,0 +1,68 @@
+name: CI Workflow for Nain
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest, freebsd-13, netbsd-9, userbsd-12]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up LLVM
+        run: |
+          if [[ "${{ matrix.os }}" == "ubuntu-latest" ]]; then
+            sudo apt-get install -y llvm clang
+          elif [[ "${{ matrix.os }}" == "windows-latest" ]]; then
+            choco install llvm
+          elif [[ "${{ matrix.os }}" == "macos-latest" ]]; then
+            brew install llvm
+          elif [[ "${{ matrix.os }}" == "freebsd-13" ]]; then
+            pkg install llvm clang
+          elif [[ "${{ matrix.os }}" == "netbsd-9" ]]; then
+            pkg_add llvm clang
+          elif [[ "${{ matrix.os }}" == "userbsd-12" ]]; then
+            pkg_add llvm clang
+          fi
+
+      - name: Build Nain
+        run: |
+          mkdir build
+          cd build
+          cmake ..   # Adjust based on your build system
+          make
+
+      - name: Run Tests
+        run: |
+          cd build
+          make test  # Adjust based on your test framework
+
+  pull-request:
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.event_name == 'pull_request'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Create Pull Request
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git checkout -b auto-pull-request
+          git add .
+          git commit -m "Auto-update from CI workflow"
+          git push --set-upstream origin auto-pull-request
+          gh pr create --base master --head auto-pull-request --title "Auto PR" --body "This PR is auto-generated."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
