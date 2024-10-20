@@ -10,3 +10,5 @@
 *.elf
 *.temp
 *.tmp
+
+*.untraked.*
