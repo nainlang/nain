@@ -34,7 +34,7 @@ There will be consequences for violating the code of conduct.
 Even though, there will be some moderators, if you are one of them, follow these extra rules:
 
 - Take immediate action if someone is harassing you or making you feel uncomfortable, or vice-versa, even if you are not the harasser or the harassed
-- YOU are responsible for the consequences of your actions, not me
+- YOU are responsible for the consequences of your actions, not we
 - Do not warn people or ban them if they are not breaking the rules, even if you are a moderator
 - Be civil, be polite and kind, if you helped someone, be polite and kind with them
 - Don't get angry, if you are not right, even if you are a moderator, you should not get angry, everyone makes mistakes
