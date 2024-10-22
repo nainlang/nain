@@ -41,4 +41,3 @@ Even though, there will be some moderators, if you are one of them, follow these
 - No corruption, paying for banning or other forms of corruption is not allowed, and you will get IP banned if you are doing it. and the person who is doing it will be banned, and if you banned someone, they will be unbanned.
 
 Thanks for helping us to create a safe and welcoming environment for everyone.
-- Mario
